@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style the body */
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1483918793747-5adbf82956c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjUwfHxoZWFsdGh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  margin: 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  height: 80vh;
+}
+.card h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: -20px;
+}
+
+/*header*/
+/*navbar*/
+
+main.navbar {
+  background-color: rgb(65, 175, 166);
+  display: flex;
+  justify-content: center;
+  padding-right: 40px;
+  height: 60px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  font-size: 16px;
+  padding: 18px 22px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(31, 35, 94);
+  color: rgb(255, 255, 255);
+}
+header div {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgba(214, 147, 102, 0.4);
+}
+h2 {
+  color: white;
+  font-size: 30px;
+}
+h5 {
+  color: rgb(46, 39, 39);
+  font-size: 20px;
+  margin: 5px;
+}
+.fakeimg img {
+  width: 290px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding: 20px;
+  background-color: rgba(214, 147, 102, 0.4);
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0px;
+}
+.title p {
+  font-size: 20px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+/*posts*/
+.first-img img {
+  height: auto;
+  width: auto;
+  margin: 10px auto;
+}
+/*.leftcolumn {
+  float: left;
+  width: 75%;
+  margin: 30px;
+}
+
+/* Right column 
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 300px;
+  padding: 10px;
+  margin: 20px 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 10px auto;
+  margin: 10px 10px;
+}
+.first-img img {
+  position: relative;
+}
+.first-img p {
+  position: absolute;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 159, 91, 0.76);
+}
+form input {
+  height: 30px;
+}
+#formbutton {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(65, 175, 166);
+}
+
+/* Clear floats after the columns */
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
