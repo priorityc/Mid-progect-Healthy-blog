@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://images.unsplash.com/photo-1483918793747-5adbf82956c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjUwfHxoZWFsdGh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: url("https://images.unsplash.com/photo-1547714695-bed5d1fef848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGhlYWx0aHklMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
   margin: 0;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +18,7 @@ body,
 html {
   height: 80vh;
 }
-.card h2 {
+.article-one-box h2 {
   color: white;
   font-weight: bold;
   font-size: 2rem;
@@ -32,18 +32,19 @@ main {
 /*header*/
 /*navbar*/
 
-main.navbar {
-  background-color: rgb(65, 175, 166);
+.navbar {
+  background-color: rgb(204, 77, 77);
   display: flex;
   justify-content: center;
   padding-right: 40px;
   height: 60px;
+  width: 400px;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   color: white;
-  font-size: 16px;
+  font-size: 22px;
   padding: 18px 22px;
   text-decoration: none;
   text-align: center;
@@ -63,17 +64,65 @@ header div {
 }
 h2 {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
+  margin-left: 40px;
 }
-h5 {
-  color: rgb(46, 39, 39);
-  font-size: 20px;
+.header-box h5 {
+  color: rgb(194, 182, 182);
+  font-size: 25px;
   margin: 5px;
+  font-weight: bold;
 }
-.fakeimg img {
-  width: 290px;
+.header-box p {
+  font-weight: bold;
+  font-size: large;
+  color: rgb(13, 13, 43);
+  margin-left: 40px;
+}
+.article-one-box button {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(204, 77, 77);
+  margin: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.article-one-box button:hover {
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.1);
+  font-size: 20px;
+}
+.article-one-box {
+  background-color: rgba(32, 19, 105, 0.363);
+}
+.fakeimg h5 {
+  font-weight: bold;
+  color: #555;
+  font-size: 2rem;
+  margin: 20px;
+}
+.card h3 {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+p {
+  font-size: 20px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.article-one-box img {
+  align-items: center;
+  width: 90%;
   height: auto;
-  margin-right: 10px;
+  margin: 20px;
+  padding: 40px;
+}
+.fake-img p {
+  font-size: 20px;
 }
 
 .bottom-left {
@@ -132,19 +181,34 @@ h1 {
   position: absolute;
 }
 form {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 40px;
+  height: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(231, 159, 91, 0.76);
 }
 form input {
-  height: 30px;
+  width: 200px;
+  height: 50px;
+  width: auto;
+  padding: 20px;
+  margin: 10px;
 }
 #formbutton {
   width: 200px;
   height: 50px;
   background-color: rgb(65, 175, 166);
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
 }
-
+.rightcolumn {
+  display: flex;
+  flex-direction: column;
+}
 /* Clear floats after the columns */
 
 /* Footer */
@@ -160,5 +224,12 @@ form input {
   .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+  .Desktop {
+    display: contents;
+  }
+  .rightcolumn {
+    display: flex;
+    flex-direction: row;
   }
 }
