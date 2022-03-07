@@ -9,17 +9,19 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+
   background-image: url("https://images.unsplash.com/photo-1547714695-bed5d1fef848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGhlYWx0aHklMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
   margin: 0;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
+  height: 50%;
 }
 body,
 html {
   height: 80vh;
 }
 .article-one-box h2 {
-  color: white;
+  color: rgb(207, 83, 83);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -36,18 +38,15 @@ main {
   background-color: rgb(204, 77, 77);
   display: flex;
   justify-content: center;
-  padding-right: 40px;
-  height: 60px;
-  width: 400px;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   color: white;
-  font-size: 22px;
-  padding: 18px 22px;
+  font-size: 15px;
+  padding: 15px 20px;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -56,99 +55,48 @@ main {
   background-color: rgb(31, 35, 94);
   color: rgb(255, 255, 255);
 }
-header div {
+.header-box {
   border-radius: 5px;
-  padding: 20px;
-  margin: 20px auto;
-  background-color: rgba(214, 147, 102, 0.4);
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  background-color: rgba(161, 117, 87, 0.4);
 }
-h2 {
-  color: white;
-  font-size: 35px;
-  margin-left: 40px;
+.header-box h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px #ff0000;
 }
 .header-box h5 {
-  color: rgb(194, 182, 182);
-  font-size: 25px;
+  color: rgb(194, 170, 170);
+  font-size: 20px;
   margin: 5px;
   font-weight: bold;
+  text-align: center;
 }
 .header-box p {
   font-weight: bold;
   font-size: large;
   color: rgb(13, 13, 43);
-  margin-left: 40px;
 }
-.article-one-box button {
-  width: 200px;
-  height: 50px;
-  background-color: rgb(204, 77, 77);
-  margin: 40px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-.article-one-box button:hover {
-  background-color: #555;
-  color: white;
-  font-weight: bold;
-  transform: scale(1.1);
+.article-one-box h2 {
   font-size: 20px;
+  margin-left: 20px;
+
+  padding: 10px;
+}
+.article-one-box p {
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
 }
 .article-one-box {
+  height: fit-content;
+  height: auto;
+  width: 380px;
   background-color: rgba(32, 19, 105, 0.363);
 }
-.fakeimg h5 {
-  font-weight: bold;
-  color: #555;
-  font-size: 2rem;
-  margin: 20px;
-}
-.card h3 {
-  margin-left: 40px;
-  margin-top: 20px;
-}
-p {
-  font-size: 20px;
-  color: white;
-  margin-left: 40px;
-  margin-top: 10px;
-}
-.article-one-box img {
-  align-items: center;
-  width: 90%;
-  height: auto;
-  margin: 20px;
-  padding: 40px;
-}
-.fake-img p {
-  font-size: 20px;
-}
 
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  padding: 20px;
-  background-color: rgba(214, 147, 102, 0.4);
-}
-
-h1 {
-  font-size: 60px;
-  margin: 0px;
-}
-.title p {
-  font-size: 20px;
-  margin-top: 6px;
-  margin-bottom: 0px;
-  font-weight: 600;
-}
-/*posts*/
-.first-img img {
-  height: auto;
-  width: auto;
-  margin: 10px auto;
-}
 /*.leftcolumn {
   float: left;
   width: 75%;
@@ -162,53 +110,51 @@ h1 {
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  width: 300px;
-  padding: 10px;
-  margin: 20px 10px;
-}
+
 
 /* Add a card effect for articles */
-.card {
-  padding: 10px auto;
-  margin: 10px 10px;
-}
-.first-img img {
-  position: relative;
-}
-.first-img p {
-  position: absolute;
-}
+
 form {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  margin: 40px;
-  height: 50%;
-  width: 100%;
+  margin: 20px;
+  height: 350px;
+  width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgba(231, 159, 91, 0.76);
 }
-form input {
-  width: 200px;
-  height: 50px;
+#input1,
+#input2 {
+  width: 80px;
+  height: 30px;
   width: auto;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
 }
-#formbutton {
-  width: 200px;
-  height: 50px;
-  background-color: rgb(65, 175, 166);
-  margin: 10px;
-  font-size: 30px;
-  font-weight: bold;
-}
-.rightcolumn {
+.box {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+#subscribe {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(173, 48, 86);
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#pay {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(92, 59, 69);
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /* Clear floats after the columns */
 
 /* Footer */
@@ -217,18 +163,33 @@ form input {
   text-align: center;
   background: #ddd;
 }
+body.Desktop-nav {
+  display: none;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
-    width: 100%;
-    padding: 0;
+@media screen and (min-width: 768px) {
+  body.Mobile-nav {
+    display: none;
   }
-  .Desktop {
-    display: contents;
+  .navbar {
+    display: flex;
+    width: 100vw;
   }
-  .rightcolumn {
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main.article-one-box {
+    margin-right: 100px;
+  }
+}
+@media screen and(min-width: 900px) {
+  body img {
+    height: 100%;
+  }
+  .box {
     display: flex;
     flex-direction: row;
   }

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style the body */
+form {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 30px;
+  padding: 30px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 159, 91, 0.76);
+}
+form input {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+#formbutton {
+  width: 90px;
+  height: 120px;
+  background-color: rgb(175, 65, 98);
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 20px;
+}
