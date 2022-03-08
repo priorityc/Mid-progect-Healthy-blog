@@ -36,19 +36,64 @@
       </div>
 
      
-        <form>
-          <div>
-      <label for="input1">Name</label><br>
-        <input required type="text" id="input1" placeholder="john smith" />
+        <form name='myform'>
+    <div>
+      <h5>Subscribe for the Healthy club today just for 3£ a month.</p>  
+        <label for="input1">Name</label><br>
+        <input type="text" id="input1" name='fname' placeholder="john smith" />
+        <br>
+        <label for="input2">Email</label><br>
+        <input type="email" id="input2"name='e-mail' placeholder="a@a.com" />
+        <br>
+      
+          <button type='button' onclick='validateForm()'>Subscribe</button>
+       
+        
         <br />
-        <br />
-        <div><label for="input2">Email</label><br>
-        <input required type="email" id="input2" placeholder="a@a.com" />
-        <h5>Subscribe for the Healthy club today just for 3£ a month.</p>
-        <br />
-        <button id='subscribe' type='button'>Subscribe</button>
-        <h3></h3>
-        <button id='Pay' type='button'>Pay now</button>
+        <div>
+          <label for="creditCard">Card Number</label>
+          <input type="text" name="creditCard" id="creditCard">
+        </div>
+       
+        <div>
+          <label for="cvv">Security Code</label>
+          <input type="text" name="cvv" id="cvv">
+        </div>
+        
+        <div>
+          <label for="Expiration">Exp. (MM/YYYY)</label>
+            <input type="text" name="exp-month" id="exp-month" size="2">
+            <span> / </span>
+            <input type="text" name="exp-year" id="exp-year" size="4">
+        </div>
+        <br>
+        <br>
+        
+      
+        <div id="paypal-button-container-P-66655252W38647500MITI6FQ"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AQVkpnAlrdRXSR5Y3KdUMBmwk_Uocy6hBgBaQK8CE39AgMM5HiqEVkxLMRNxg7uhz_U-KE8Ov7t-YTqm&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'pill',
+                  color: 'black',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-66655252W38647500MITI6FQ'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-66655252W38647500MITI6FQ'); // Renders the PayPal button
+        </script>
+        <div class='hiden'>
+          <p>post</p>
+        </div>
       </article>
     </div>
   </form>
