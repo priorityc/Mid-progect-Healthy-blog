@@ -29,7 +29,7 @@ if (Expdate.indexOf('/') == -1) {
     alert("Please add valid expire date.");
 }else 
 password=alert(`Thank you you have been subscribed.Your password is 1245780p`);
- //console.log(returnResult);
+ 
 }
 
 
@@ -41,8 +41,13 @@ function funcValidateConfirm() {
   fetch(`./posts.json`)
   .then((res) => res.json())
   .then((data) => {
-
- document.querySelector("#hiden").innerHTML=`<img src='${data[0].image1}'>`
- document.querySelector("#post").innerHTML=`<p>'${data[1].post}'</p>`
+   document.querySelector("form").style.display="none";
+   document.querySelector('h3').style.display="none";
+   document.querySelector("#hiden").innerHTML=`<p>'${data[0].message}'</p>`
+   document.querySelector("#img").innerHTML=`<img src='${data[1].image1}'>`
+   document.querySelector("#post").innerHTML=`<p>'${data[2].post}'</p>`
+ 
+ 
   });  
 }
+  

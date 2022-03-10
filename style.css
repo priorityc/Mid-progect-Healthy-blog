@@ -91,9 +91,7 @@ main {
   margin-left: 20px;
 }
 .article-one-box {
-  display: block;
-  height: fit-content;
-  height: auto;
+  height: 800px;
 
   width: 70vw;
   background-color: rgba(68, 54, 151, 0.363);
@@ -127,12 +125,13 @@ form {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
   height: 400px;
-  width: 700px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(231, 159, 91, 0.76);
+  margin: 60px auto;
 }
 form h5 {
   font-size: 16px;
@@ -205,23 +204,26 @@ form #login {
   .Buttons {
     margin-left: 20px;
   }
-  #hiden {
-    display: block;
+  #img img {
+    width: 600px;
+    height: 400px;
+    margin-left: 200px;
   }
-  #hiden img {
-    width: 400px;
-    height: 300px;
+  #hiden p {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: brown;
     margin: 20px;
+    padding: 10px;
+    box-shadow: rgba(223, 224, 235, 0.24) 0px 3px 8px;
   }
 }
+
 @media screen and(min-width: 900px) {
   body img {
     height: 100%;
   }
-  .box {
-    display: flex;
-    flex-direction: row;
-  }
+
   .box {
     display: flex;
     flex-direction: row;
