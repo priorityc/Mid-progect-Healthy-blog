@@ -1,49 +1,48 @@
 
 //geting the data
 
+
+
 function validateForm() {
    personName=document.forms['myform']['fname'].value;
  if (personName == ('')){
     alert("Name must be filled out");
-  }
-   personEmail = document.forms['myform']['e-mail'].value;
-   if (personEmail.indexOf('@') == -1){
+
+ }else personEmail = document.forms['myform']['e-mail'].value;
+   
+ if (personEmail.indexOf('@') == -1){
     alert("Email must be filled out");
-  }
+
+ }else personCard = document.forms['myform']['creditCard'].value;
+
+ if (personCard.length < 16) {
+    alert("Please add valid card number");
+  
+}else security = document.forms['myform']['cvv'].value;
+  
+if (security.length < 3){
+    alert("Please add valid security code");
+  
+}else Expdate = document.forms['myform']['exp-month'].value;
+  
+if (Expdate.indexOf('/') == -1) {
+    alert("Please add valid expire date.");
+}else 
+password=alert(`Thank you you have been subscribed.Your password is 1245780p`);
+ //console.log(returnResult);
 }
 
-//if payid func
-/*paypal.Buttons({
-  onCancel: function (data) {
-    // Show a cancel page, or return to cart
-  }
-}).render('#paypal-button-container');
 
-let element=document.querySelector('hiden');*/
-
-
-//stake the data
-fetch(`./posts.json`)
+function funcValidateConfirm() {
+   const password=1245780&&('p')&&('#');
+ if (password==('')){
+  alert("Please enter the password");
+ }else
+  fetch(`./posts.json`)
   .then((res) => res.json())
   .then((data) => {
-     console.log(data);
 
-   if (!localStorage.getItem('image1'));
-   funcLocalData(data.items);
-    }
-    //funcCreateCards();
-  );
-
-   //console.log(image1);
-
-
-  funcLocalData = (posts) => {
-    let postData = [];
-  
-  posts.map((p) => {
-      postData.push({
-        image1: p.image1,
-        post: p.post,
-      });
-    }
-  )};
+ document.querySelector("#hiden").innerHTML=`<img src='${data[0].image1}'>`
+ document.querySelector("#post").innerHTML=`<p>'${data[1].post}'</p>`
+  });  
+}

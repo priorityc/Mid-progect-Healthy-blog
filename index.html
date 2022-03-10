@@ -33,7 +33,12 @@
       <h2>Guide for cooking healthy deserts.</h2>
       <p>Here is the place where you will find practical tips with examples and ideas on how to easily and quickly find a substitute for each ingredient and turn every calorie bomb into a real healthy dessert.Honey, maple syrup, dates, all kinds of dried fruits such as raisins, figs, blueberries, any fruit that has a natural sweetness, in the worst case if you do not have such brown sugar or sweetened milk such as condensed milk.</p>
       <h3>Read more  of this content when you subscribe.</h3>
+      <div id='hiden'>
+        
       </div>
+      <div id='post'></div>
+    </div>
+
 
      
         <form name='myform'>
@@ -45,10 +50,6 @@
         <label for="input2">Email</label><br>
         <input type="email" id="input2"name='e-mail' placeholder="a@a.com" />
         <br>
-      
-          <button type='button' onclick='validateForm()'>Subscribe</button>
-       
-        
         <br />
         <div>
           <label for="creditCard">Card Number</label>
@@ -65,44 +66,22 @@
             <input type="text" name="exp-month" id="exp-month" size="2">
             <span> / </span>
             <input type="text" name="exp-year" id="exp-year" size="4">
-        </div>
-        <br>
-        <br>
+            <br>
+          <button type='button' onclick='validateForm()'>Subscribe</button>
+          <br>
         
-      
-        <div id="paypal-button-container-P-66655252W38647500MITI6FQ"></div>
-        <script src="https://www.paypal.com/sdk/js?client-id=AQVkpnAlrdRXSR5Y3KdUMBmwk_Uocy6hBgBaQK8CE39AgMM5HiqEVkxLMRNxg7uhz_U-KE8Ov7t-YTqm&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal.Buttons({
-              style: {
-                  shape: 'pill',
-                  color: 'black',
-                  layout: 'vertical',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                  /* Creates the subscription */
-                  plan_id: 'P-66655252W38647500MITI6FQ'
-                });
-              },
-              onApprove: function(data, actions) {
-                alert(data.subscriptionID); // You can add optional success message for the subscriber here
-              }
-          }).render('#paypal-button-container-P-66655252W38647500MITI6FQ'); // Renders the PayPal button
-        </script>
-        <div class='hiden'>
-          <p>post</p>
-        </div>
-      </article>
+        
+            <label for="input3">Password</label><br>
+            <input type="text" id="input3"name='pass' placeholder="1234567a" />
+            <button id='enter' type='button' onclick='funcValidateConfirm()'>Enter</button>
+            <br>
+          </div>
+        </form>
+       
+    
     </div>
-  </form>
-      <br />
-       </div>
-  
-    </div>
-      </main>
-      <p2> </p>
+ 
+   
   
     
   </body>
