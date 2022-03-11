@@ -27,7 +27,7 @@ function validateForm() {
 
       if (Expdate.indexOf('/') == -1) {
          alert("Please add valid expire date.");
-      }else alert(`Your Password is ${showconfirm()}`);
+      }else alert(`Your Password is ${generateP()}`);
       
    }
    console.log(pass);
