@@ -30,39 +30,23 @@ function validateForm() {
       }else alert(`Your Password is ${generateP()}`);
       
    }
-   console.log(pass);
+   //console.log(pass);
       //function generate randow password
-      function generateP() {
-         pass=('');
-         letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-         string='ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 
-                 '0123456789@#$';
-         numbers = '0123456789@#$'
-          for (i = 1; i <= 8; i++) {
-             string = letters.charAt();
-             Math.floor(Math.random()
-                         * str.length + 1);
-            
-         }
-           
-         return pass;
-     }
+      function generateP(length=8) {//setting the lenght of the password parametar
+        charachters='0123456789@#ABCDEFGHIJKLMNOPQRSTUVWXYZ'; //string whit charachters
+        let password = '';//empti conteiner whit label password
 
- 
-         /*let password = string; //set variable for pass
-         let string = "ABCDEFGHIGKLMNOPQRSTUVWXYZ" + "abcdefghigklmnopqrstuvwxyz1234567890"; //string leters and numbers possible to use
-         for (i = 1; i >= 8; i++) { //using for loop to loop throu the process over and over again
-            let generator = Math.floor(Math.random() //using random number generator of our string adding one
-               * string.length + 1);
-         password+= string.charAt(generator); //combinatio
-         //console.log(showconfirm);
-           }
-          
+         for (i = 1; i <=length; i++) { //loop thrugh the lenght 
+             let generator =Math.floor(Math.random()*charachters.length)+1; //generate random charachters by the lenght 
+             password += charachters.charAt(generator);//add random letters
+             
+         }
+          return password;
          }
    
                     
-          /*Fech_post =() =>{
-            if (password) {
+         funcValidateConfirm=() =>{
+            document.forms['myform']['fname'].password;
             fetch(`./posts.json`)
             .then((res) => res.json())
             .then((data) => {
@@ -74,4 +58,4 @@ function validateForm() {
             
                });
             }
-         }*/
+         
